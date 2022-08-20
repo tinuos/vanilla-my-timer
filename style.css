@@ -1,0 +1,50 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cute Font', cursive;
+  color: #fff;
+}
+
+.my-timer-app {
+  background: #141414;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  position: relative;
+  width: 1100px;
+  height: 720px;
+}
+
+/* Time Display */
+.time-display {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 200px;
+  height: 60px;
+  font-size: 30px;  
+}
+.time-display div {
+  line-height: 30px;
+  text-align: right;
+}
+.time-display .y-m-d-d-time-box .year::after,
+.time-display .y-m-d-d-time-box .month::after,
+.time-display .y-m-d-d-time-box .date::after {
+  content: '.';
+}
+.time-display .y-m-d-d-time-box .day::after {
+  content: '요일';
+}
+.time-display .h-m-s-time-box .hour::after,
+.time-display .h-m-s-time-box .minute::after {
+  content: ' :';
+}
