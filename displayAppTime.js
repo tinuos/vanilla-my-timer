@@ -30,10 +30,14 @@ function setDefaultAppTime(getCurrentTime, AppTime) {
   const h_m_s_time_box = document.querySelectorAll('.h-m-s-time-box span');
 
   y_m_d_d_time_box.forEach(element => {
-    element.textContent = AppTime[element.className];
+    if (element.className === 'month' || element.className === 'day') {
+      element.textContent = AppTime[element.className].toString();
+    } else {
+      element.textContent = AppTime[element.className].toString().padStart(2, 0);
+    }
   });
   h_m_s_time_box.forEach(element => {
-    element.textContent = AppTime[element.className];
+    element.textContent = AppTime[element.className].toString().padStart(2, 0);
   }); 
 }
 

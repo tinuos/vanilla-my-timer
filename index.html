@@ -7,6 +7,7 @@
   <title>My Timer - tinuos</title>
   <!-- Style Sheets -->
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/edaf60196d.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- My Timer App -->
@@ -48,7 +49,37 @@
       </div>
 
       <!-- Timer -->
-      <div class="timer"></div>
+      <div class="timer">
+        <div class="time-set">
+          <div id="hour" class="time-box">
+            <button><i class="fa-solid fa-lg fa-angle-up"></i></button>
+            <span class="type">H</span>
+            <span class="hour">00</span>
+            <button><i class="fa-solid fa-lg fa-angle-down"></i></button>
+          </div>
+          <div id="minute" class="time-box">
+            <button><i class="fa-solid fa-lg fa-angle-up"></i></button>
+            <span class="type">M</span>
+            <span class="minute">00</span>
+            <button><i class="fa-solid fa-lg fa-angle-down"></i></button>
+          </div>
+          <div id="second" class="time-box">
+            <button><i class="fa-solid fa-lg fa-angle-up"></i></button>
+            <span class="type">S</span>
+            <span class="second">00</span>
+            <button><i class="fa-solid fa-lg fa-angle-down"></i></button>
+          </div>
+        </div>
+        <div class="expected-time"></div>
+        <div class="control-box">
+          <button name="start" class="btn btn-blue">시작</button>
+        </div>
+        <div class="complete-pop-up">
+          <p>타이머 완료</p>
+          <p>🚀 🚀 🚀</p>
+          <button name="complete" class="btn btn-blue">완료</button>
+        </div>
+      </div>
 
 
       <!-- scripts -->
